@@ -1,13 +1,67 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background-color:#193549;
+  font-family: Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+.code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    background-color: #343a40!important;
+    color: #e83e8c;
+    padding:1rem;
+    margin-bottom:1rem;
+    word-break:break-all;
+}
+.navbar{
+  font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.bg-combat{
+  background-color:#193549;
+}
+.text-combat-yellow{
+  color:#ffee80;
+}
+.text-combat-parrot{
+  color:#a5ff90;
+}
+.text-combat-blue{
+  color:#0184f6;
+}
+.text-combat-ocean{
+  color:#9dfdfd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color:#ffee80;
+ }
+
+ p {
+  color:#9dfdfd;
+ }
+
+ .mark, mark {
+    background-color: transparent!important;
+    color:#a5ff90;
+}
+
+.header{
+  padding:2rem;
+  text-align:center;
+}
+
+.narangi{
+  color:#fa9b01;
+}
+.pink{
+  color:#f793fc;
+}
+.faint-yellow{
+  color:#e2b409;
+}
+samp{
+  color:#fa9b01;
 }
