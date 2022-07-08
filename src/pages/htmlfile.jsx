@@ -136,6 +136,29 @@ const Htmlfile = () => {
         <p>To change the space between table cells, use the CSS <small> <mark> border-spacing</mark> </small>  property on the <small> <mark> table </mark> </small> element</p>
       </div>
 
+       <div>
+        <h6>List the various techniques for optimizing website assets</h6>
+        <p>reduce the download size, and the total number of HTTP requests that are made,  Following techniques can be used for optimizing website assets: CDN hosting, File compression, File concatenation, Offloading assets, Re-organizing, Refining code</p>
+      </div>
+      
+
+             <div>
+        <h6>Please explain Microdata in HTML5</h6>
+        <p>Microdata is a standardized way to provide additional semantics in your web pages.
+Microdata lets you define your own customized elements and start embedding custom properties in your web pages. At a high level, microdata consists of a group of name-value pairs.</p>
+      </div>
+
+      <div>
+        <h6>What is a manifest file in HTML5</h6>
+        <p>The manifest file is used to list down resources that can be cached. Browsers use this information to make the web page load faster than the first time. There are 3 sections in the manifest file. CACHE Manifest - Files needs to be cached. Network - File never to be cached, always need a network connection. Fallback - Fallback files in case a page is inaccessible.</p>
+      </div>
+
+            <div>
+        <h6>What is the use of MathML Element in HTML5</h6>
+        <p>The word MathML (Mathematical Markup Language) is a markup language, that is used to show scientific and mathematical expression on the web. MathML is a form of XML (extensible markup language) to describe the Math notation.
+We can use <small> <mark> &lt;math&gt; ...&lt;/math&gt; </mark> </small> tags inside the HTML5 documents for implementing MathML element.</p>
+      </div>
+
       <div>
         <h6>Notes</h6>
         <p>The class name, id name is case sensitive!</p>
