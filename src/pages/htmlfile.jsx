@@ -73,7 +73,7 @@ const Htmlfile = () => {
 
       <div>
         <h6>Doctype</h6>
-        <p>The <small> <mark> &lt;!DOCTYPE&gt; </mark> </small> declaration represents the document type, and helps browsers to display web pages correctly. It must only appear once, at the top of the page (before any HTML tags). It is not case sensitive and HTML5 declaration is <small>  <mark> &lt;!DOCTYPE html&gt; </mark> </small>. If it not present in document the page may quirk.</p>
+        <p>The <small> <mark> &lt;!DOCTYPE&gt; </mark> </small> declaration represents the document type, and helps browsers to display web pages correctly. As In HTML 4.01, all &lt;!DOCTYPE&gt;declarations require a reference to a Document Type Definition (DTD), because HTML 4.01 was based on Standard Generalized Markup Language (SGML). Where as HTML5 is not based on SGML, and therefore does not require a reference to a Document Type Definition (DTD).</p>
       </div>
 
       <div>
