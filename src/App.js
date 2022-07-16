@@ -9,7 +9,8 @@ import Graphqlfile from './pages/graphqlfile'
 import Expressfile from './pages/expressfile'
 import Programs from './pages/programs'
 import Mongofile from './pages/mongofile'
-import NotFound from "./pages/NotFound";
+import NotFound from "./pages/NotFound"
+
 function App() {
   return (
     <BrowserRouter>
@@ -23,13 +24,13 @@ function App() {
           <Route path="redux" element={ <Reduxfile />} />
           <Route path="graphql" element={<Graphqlfile />} />
           <Route path="express" element={<Expressfile />} />
-          <Route  path="mongo" element={ <Mongofile />} />
-          <Route  path="programs" element={<Programs />} />
+          <Route path="mongo" element={ <Mongofile />} />
+          <Route path="programs" element={<Programs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </BrowserRouter>
-  );
+  )
 }
 
 export default App;

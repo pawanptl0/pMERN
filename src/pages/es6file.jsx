@@ -22,7 +22,7 @@ const Es6file = () => {
         <h6>Comparison</h6>
         <p>
           All comparison operators return a boolean value<br />
-          JavaScript converts the values to numbers during different types of comparison<br />
+          comparing values of different types, JavaScript converts the values to numbers.<br />
           <mark><small>===</small></mark> checks the equality without type conversion called strict equality.<br />
           <mark><small>null/undefined</small></mark> are converted to numbers except equality. <mark><small>null</small></mark>  becomes <mark><small>0</small></mark>, <mark><small>undefined</small></mark> becomes <mark><small>NaN</small></mark>. <mark><small>null</small></mark> only equals <mark><small>undefined</small></mark><br />
           <code>'2' &gt; 1</code> returns true because both operands coverts to number.<br />
