@@ -150,14 +150,14 @@ const Es6file = () => {
         <h6>Global object</h6>
         <p>The global object provides variables and functions that are available anywhere. In a browser it is named window, for Node.js it is global, for other environments it may have another name. Recently, <mark><small>globalThis</small></mark> was added to the language, as a standardized name for a global object, that should be supported across all environments and all major browsers.</p>
       </div>
-
+  
       <div>
         <h6>call, apply and bind </h6>
         <p>
-          <mark><small>call</small></mark> allows to call a function explicitly setting this. It accepts an argument list.
+          <mark><small>call</small></mark> allows to call a function explicitly setting 'this'. It accepts list of arguments.
           <small> <mark> func.call(context, arg1, arg2, arg3, .....) </mark> </small><br />
-          <mark><small>apply</small></mark> allows to call a function explicitly setting this with args as array-like object as the list of arguments.<small> <mark> func.apply(context, args)</mark> </small><br />
-          <mark><small>bind</small></mark> a built-in method bind that allows to fix this. Syntax: <small> <mark> func.bind(context) </mark></small>.alternative for bind is wrapper function like arrow function.
+          <mark><small>apply</small></mark> allows to call a function explicitly setting 'this'. It accepts 'array-like object' as the list of arguments.<small> <mark> func.apply(context, args)</mark> </small><br />
+          <mark><small>bind</small></mark> a built-in method bind that allows to fix this. Syntax: <small> <mark> func.bind(context) </mark></small>. alternative for bind is wrapper function like arrow function.
         </p>
       </div>
 
@@ -386,6 +386,24 @@ const Es6file = () => {
       <div>
         <h6>Deep and Shallow copy</h6>
         <p>A <strong>deep copy</strong> means that all of the values of the new variable are copied and disconnected from the original variable. A <strong>shallow copy</strong> means that certain (sub-)values are still connected to the original variable.</p>
+      </div>
+
+            <div>
+        <h6>Decorators</h6>
+        <p>a special function that takes another function and alters its behavior. The Decorator is reusable. The logic is separate. We can combine multiple decorators if needed (other decorators will follow).</p>
+      </div>
+
+      <div>
+        <h6>ES2022/ES13</h6>
+        <p>Released in June 2022</p>
+        <p>New Features: <br />
+          1.  <small> <mark>at()</mark></small>: Method in arrays and strings. ex. arr.at(pos). <br />
+          2.  <small> <mark>Error.cause</mark></small>:  'cause' property on the error object would allow us to specify which error caused the other error. ex: throw new Error('I am the result of another error', &#123; cause: error &#125;) <br />
+          3. Top-level <small> <mark>await</mark></small>: can use await withot 'async'.<br />
+          4. Private slots and methods. #name=Pawan, #setName() &#123;  &#125; <br />
+          5. <small> <mark>Object.hasOwn(obj, propKey)</mark></small> provides a safe way to check if an object obj has an own property with the key propKey. In contrast to Object.prototype.hasOwnProperty, it works with all objects.<br />
+          6. Array find from last. <small><mark>findLast, findLastIndex</mark></small>
+        </p>
       </div>
 
       <div>

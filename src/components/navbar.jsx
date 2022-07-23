@@ -13,31 +13,31 @@ const Navbar = () => {
       <div className="collapse navbar-collapse justify-content-end me-3" id="collapsibleNavbar">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link className="nav-link" to="/">HTML</Link>
+            <Link className="nav-link" to="/" >HTML</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/css">CSS</Link>
+            <Link className="nav-link" to="/css" >CSS</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/es6">ES6</Link>
+            <Link className="nav-link" to="/es6" >ES6</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/react">REACT</Link>
+            <Link className="nav-link" to="/react" >REACT</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/redux">REDUX</Link>
+            <Link className="nav-link" to="/redux" >REDUX</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/express">EXPRESS</Link>
+            <Link className="nav-link" to="/express" >EXPRESS</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/mongo">MONGO</Link>
+            <Link className="nav-link" to="/mongo" >MONGO</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/graphql">GRAPHQL</Link>
+            <Link className="nav-link" to="/graphql" >GRAPHQL</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/programs">PROGRAMS</Link>
+            <Link className="nav-link" to="/programs" >PROGRAMS</Link>
           </li>
         </ul>
       </div>
