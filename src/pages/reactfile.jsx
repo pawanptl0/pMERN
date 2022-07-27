@@ -132,7 +132,8 @@ const Reactfile = () => {
 
       <div>
         <h6>refs</h6>
-        <p> <small> <mark> ref </mark></small> attribute provides a way to access DOM nodes or React elements created in the render method. the ref created in the constructor with <small> <mark> React.createRef() </mark></small> receives the underlying DOM element as its current property. When the <small> <mark> ref </mark></small>  attribute is used on a custom class component, the ref object receives the mounted instance of the component as its current.</p>
+        <p> <small> <mark> ref </mark></small> attribute provides a way to access DOM nodes or React elements created in the render method. the ref created in the constructor with <small> <mark> React.createRef() </mark></small> receives the underlying DOM element as its current property. When the <small> <mark> ref </mark></small>  attribute is used on a custom class component, the ref object receives the mounted instance of the component as its current. There are a few good use cases for refs: Managing focus, text selection, or media playback, Triggering imperative animations,
+Integrating with third-party DOM libraries. Avoid using refs for anything that can be done declaratively. you may not use the ref attribute on function components. </p>
       </div>
 
       <div>

@@ -166,6 +166,16 @@ We can use <small> <mark> &lt;math&gt; ...&lt;/math&gt; </mark> </small> tags in
         <p>Emojis are characters from the UTF-8 character set. Emojis look like images, or icons, but they are not.</p>
       </div>
 
+            <div>
+        <h6>ClickJacking</h6>
+        <p>ClickJacking is a security attack where the user is fooled to click on something while they assume they are clicking another thing. The attack mostly happens by the HTML frames. </p>
+      </div>
+
+       <div>
+        <h6>Ways to decrease page load time.</h6>
+        <p>image optimization, browser cache, optimize and compress content.</p>
+      </div>
+
       <div>
         <a href="https://www.w3schools.com/tags/tag_picture.asp" target="_blank" className="btn btn-link" rel="noopener noreferrer">Picture Tag</a>
         <a href="https://www.w3schools.com/tags/tag_datalist.asp" target="_blank" className="btn btn-link" rel="noopener noreferrer">Datalist Tag</a>
