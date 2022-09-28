@@ -1284,6 +1284,19 @@ pokemonName.apply(pokemon,['chips', 'football']);<br />
       </div>
 
       <div>
+        <h6>Callstack</h6>
+        <p>The call stack is used by JavaScript to keep track of multiple function calls.  We use call stack for memorizing which function is running right now. The call stack works based on the LIFO principle i.e., last-in-first-out. <br />
+        <a href="https://www.javascripttutorial.net/javascript-call-stack/" target="_blank" className="btn btn-link" rel="noopener noreferrer">More...</a>
+        </p>
+      </div>
+
+      <div>
+        <h6>Event Loop</h6>
+        <p>Javascript is single-threaded asynchronous programming language. An event loop is something that pulls stuff out of the queue and places it onto the function execution stack whenever the function stack becomes empty. 
+        </p>
+      </div>
+
+      <div>
         <a
           href="https://javascript.info/array-methods"
           target="_blank"
@@ -1397,14 +1410,7 @@ pokemonName.apply(pokemon,['chips', 'football']);<br />
         >
           lifecycle of an HTML page
         </a>
-        <a
-          href="https://javascript.info/event-loop"
-          target="_blank"
-          className="btn btn-link"
-          rel="noopener noreferrer"
-        >
-          How JavaScript Works (Event Loop)
-        </a>
+        
         <a
           href="https://en.wikipedia.org/wiki/Behavior-driven_development"
           className="btn btn-link"

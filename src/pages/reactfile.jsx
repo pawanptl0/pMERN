@@ -383,6 +383,37 @@ Integrating with third-party DOM libraries. Avoid using refs for anything that c
       </div>
 
       <div>
+        <h6>React 18</h6>
+        <p>
+          <code>
+          import ReactDom from 'react-dom' //before 18 <br/>
+import ReactDom from 'react-dom/client' // in 18<br/><br/>
+
+ReactDom.render(&lt;App /&gt;, document.getElementById('root')) //before 18<br/>
+
+const root = ReactDom.createRoot(document.getElementById('root'))<br/>
+root.render(&lt;App /&gt;) // new in 18<br/><br />
+          </code>
+before 18 state update was done without concurrency means state update was done sequential.in 18 state update was done with concurrency means state update was done parallel.<br />
+
+New concurrent API's<br />
+1. useTransition()  :It is hook use in functional component. It tells react that some state update be handled with lower priority. returs array with exactly 2 values [isPending, startTransition]<br /><br />
+
+2. startTransition(): It is function for class based compoenent. It tells react that some state update ay be handled with lower priority. wrap state update in startTransition()
+Ex. startTransition(() =&gt; setSelectedUser(user))<br /><br />
+
+3. useDefferedValue(): It is a hook. tell react that older value should be displayed until a new(updated) value is ready. kind of similar to startTransition(). 
+Ex. const defferedVal = useDefferedValue(value)
+get and deffered(old) value until updated value availabel.<br /><br />
+
+# New hooks<br />
+1. useSyncExternalStore()<br />
+2. useInsertionEffect()<br />
+3. useId()
+<br /></p>
+      </div>
+
+      <div>
         <h6>TypeScript Features</h6>
 
 
@@ -433,6 +464,47 @@ Integrating with third-party DOM libraries. Avoid using refs for anything that c
 
         </samp></p>
       </div>
+
+      <div>
+        <h6>React Rendering</h6>
+        <p><strong>Initial Phase</strong>
+        During Initial rendering React goes 'root' to 'leaf'. It converts JSX into JS Object using 'CreateElement'. Put into virtual DOM and send updates to commit phase to render into the DOM.
+        <br />
+
+        <strong>Re-rendering Phase</strong>
+        React checks 'flagged' component. It converts JSX into JS Object using 'CreateElement'. Compare updated element with previous rendered elemetns tree. send only update to commit phase to render into DOM.
+        </p>
+      </div>
+
+      <div>
+        <h6>How to stop unnecessary render</h6>
+        <p>Parent has a Child and When Parent renders, child also render but not commit. Can stop this unnessary rendering by using child as 'children' in Parent. Component change its state not its props. <br/>
+        use childs memoized version.<br />
+        Parent has Object and we passing it to child then use memoized version of that Object and pass memoized version to child. Same for array.
+        </p>
+      </div>
+
+      <div>
+        <h6>Ways to cause Re-rendering</h6>
+        <p>When component calls useState's setter or useReducer's dispatch function. <br />
+        When parent components Re-renders.<br />
+  All consumers that are descendants of a Provider will re-render whenever the Provider’s value prop changes.</p>
+      </div>
+
+
+	
+
+
+      <div>
+        <h6>Axios</h6>
+        <p>It is promise based HTTP client for browser and Node.js. It sends asynchronous HTTP requests to REST endpoints and perform CRUD operations.<br />
+        * basic methods for generating requests in axios: <small> <mark> axios.request(config), axios.get(url[, config]), axios.delete(url[, config]), axios.head(url[, config]), axios.options(url[, config]), axios.post(url[, data[, config]]), axios.put(url[, data[, config]]), axios.patch(url[, data[, config]])</mark></small><br />
+        config object may have 'method', 'url', 'headers' properties.<br />
+        * Axios response object consist of : <samp> data, status, statusText, headers, config, request.</samp><br />
+
+        </p>
+      </div>
+
 
 
       <div>
